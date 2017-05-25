@@ -16,7 +16,7 @@
   <div id="app">
     Loading...
   </div>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.0-rc.3/leaflet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.3/leaflet.css" />
   <link rel="stylesheet" type="text/css" href="main.css">
 
   <!-- add Roboto font: http://www.google.com/fonts#UsePlace:use/Collection:Roboto:400,300,500 -->
@@ -33,19 +33,20 @@
       s.parentNode.insertBefore(wf, s);
     })();
   </script>
-  <script src="https://github.com/Gjum/CivMap/releases/download/v0.1.0/bundle.js"></script>
+  <script src="bundle.js"></script>
   <script type="text/javascript">
     CivMap.start({
       attribution: 'claims are not official and may differ, always check ingame | <a href="https://github.com/dev3map/dev3map.github.io">dev3map.github.io</a> | <a href="https://www.reddit.com/r/devotedmap/">reddit.com/r/devotedmap</a>',
+      borderSquareRadius: 5000,
       tilesUrl: 'https://raw.githubusercontent.com/dev3map/tiles/master/',
       claimsUrl: 'https://raw.githubusercontent.com/dev3map/data/master/claims.json',
       transitUrl: 'https://raw.githubusercontent.com/dev3map/data/master/transit.json',
       basemaps: [
         'terrain',
-        'night',
-        'simple',
         'height',
+        'night',
         'biome',
+        'simple',
         'light',
       ],
       options: {
